@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Full Stack Developer",
+    "url": "https://www.upwork.com/jobs/Full-Stack-Developer_~021851319837627838847/",
+    "posted_at": "Posted 22 minutes ago",
+    "price": "Est. budget: $500.00",
+    "job_type": "Fixed price",
+    "duration": null,
+    "experience_level": "Expert",
+    "description": "*Key Responsibilities:*\n\nDesign, develop, and maintain the front-end and back-end of the platform using React, Next.js, Node.js, and PostgreSQL.\nDevelop APIs and services to handle data processing from various end devices.\nImplement data storage, retrieval, and management solutions using PostgreSQL.\nIntegrate with AWS services (such as Lambda, S3, RDS, and more) to ensure scalability and reliability of the platform.\nCollaborate with cross-functional teams to define, design, and deliver new features.\nEnsure platform security, performance, and efficiency.\nDebug and troubleshoot issues across the full stack, providing quick and effective solutions.\nWrite clean, maintainable, and well-documented code following industry best practices.\n\nRequirements:\n\nProven experience as a Full Stack Developer, with strong skills in JavaScript, React, Next.js, Node.js, and PostgreSQL.\nProficiency in AWS services, including EC2, Lambda, S3, and RDS.\nExperience in building RESTful APIs and handling data processing tasks.\nStrong understanding of database management with PostgreSQL, including optimization and scaling.\nFamiliarity with CI/CD pipelines and cloud-based deployment strategies.\nAbility to write clean, modular, and testable code.\nExcellent problem-solving skills and attention to detail.\nStrong communication and collaboration skills.\nAbility to work independently and take ownership of the platform's development.\n\n*Preferred Qualifications:*\n\n\nExperience with real-time data processing or IoT-based solutions.\nKnowledge of serverless architecture and microservices design.\nFamiliarity with GraphQL.\nExperience with data visualization tools and techniques."
+  },
+  {
+    "title": "Data engineer to implement data pipelines",
+    "url": "https://www.upwork.com/jobs/Data-engineer-implement-data-pipelines_~021851312359806076873/",
+    "posted_at": "Posted 52 minutes ago",
+    "price": null,
+    "job_type": "Hourly: $20.00 - $50.00",
+    "duration": "Est. time: 3 to 6 months, Not sure",
+    "experience_level": "Intermediate",
+    "description": "We are looking for a data engineer to help us scale our AI models into production.  At Earthbound.ai, we develop models of the environment which help companies predict the impact of hazards like flooding, erosion, landslides on infrastructure. You will be working with a small team of founders and modelers.\n\nWe are looking for someone to help us implement data pipelines that run our models at scale and deliver data to our customers.\n\nSkills / Tech Must-Have:\nPython\nAWS\nAirflow, Dagster, or similar\nParquet and Arrow\n\nNice-to-Have:\nGolang\nAPI development\nExperience with geospatial data\nExperience with geospatial modeling"
+  },
+  {
+    "title": "Machine Learning Engineer for Real-Time AI-Driven Matching and Notification System",
+    "url": "https://www.upwork.com/jobs/Machine-Learning-Engineer-for-Real-Time-Driven-Matching-and-Notification-System_~021851309639872403249/",
+    "posted_at": "Posted 1 hour ago",
+    "price": null,
+    "job_type": "Hourly: $30.00 - $60.00",
+    "duration": "Est. time: 1 to 3 months, 30+ hrs/week",
+    "experience_level": "Expert",
+    "description": "We are developing a sophisticated AI/ML-driven system using AWS services to analyze user Ethereum wallet data and determine borrower and lender roles based on predefined criteria. By leveraging machine learning models, this system will make data-driven borrower-lender matches and notify users in real time. The project includes building the backend AI/ML models and the API layer to serve matching results, as well as real-time integration with the frontend for user notifications.\n\nScope of Work\n\nAI/ML Component\n\nClassification Model: Identify users as potential borrowers or lenders using features such as wallet balance, NFT values, and transaction history.\n\nRecommendation System: Match borrowers with lenders based on loan amounts, risk tolerance, and acceptable collateral, using collaborative or content-based filtering.\n\nAWS Services: Implement models on Amazon SageMaker, with preprocessing and data streaming managed through AWS Glue, Lambda, and Kinesis.\n\nReal-Time Event Notification System\n\nEvent-Driven Architecture: Use AWS Kinesis for real-time event streaming to monitor wallet updates and trigger model evaluation for matches.\n\nNotification Services: Implement AWS SNS for push notifications and AWS SES for email notifications to notify users of new or updated matches.\nAPI Layer\n\nMatch Retrieval Endpoint (/api/matches):\n\nPurpose: Retrieve borrower-lender matches.\n\nInput: Query parameters include userId, status, limit, and lastUpdated.\n\nOutput: Returns an array of matches with details, such as match status, counterparty data, loan details, and timestamp.\n\nUser Preferences Endpoint (/api/matches/preferences):\n\nPurpose: Allow users to update their lending and borrowing preferences.\n\nInput: JSON body with fields for lending/borrowing preferences and notification conditions.\n\nWe seek a Data Scientist/ML Engineer with expertise in developing and deploying machine learning models on AWS SageMaker. The ideal candidate should have experience in classification and recommendation systems, along with knowledge of data preprocessing and handling real-time streaming data for inference."
+  },
+  {
+    "title": "ASP 2.0 Developer to support legacy system for 6-months",
+    "url": "https://www.upwork.com/jobs/ASP-Developer-support-legacy-system-for-months_~021851305393469786057/",
+    "posted_at": "Posted 1 hour ago",
+    "price": null,
+    "job_type": "Hourly: $40.00 - $65.00",
+    "duration": "Est. time: 3 to 6 months, 30+ hrs/week",
+    "experience_level": "Expert",
+    "description": "Here\u2019s the revised job description with the request for a five-word string to filter applicants:\n\nWhat We Need\nHi! Genergy, an energy information platform company, is looking for an experienced ASP 2.0 engineer with expertise in IIS on Windows Server to support and maintain a critical legacy application. Our team is committed to delivering reliable energy insights, and this role will help ensure our foundational systems remain stable and responsive as we continue to grow.\n\nSuccess Metrics\nIn this role, success will involve:\n\n\t\u2022\tProactively monitoring and addressing system issues to maintain stability.\n\t\u2022\tProviding quick and effective solutions to minimize downtime.\n\t\u2022\tCollaborating closely with our team to document system operations.\n\t\u2022\tContributing to a smooth transition process during any system upgrades or future modernization efforts.\n\nRole and Responsibilities\n\n\t\u2022\tMaintain and support legacy applications built in ASP 2.0 on an IIS Windows Server environment.\n\t\u2022\tDiagnose and resolve technical issues to ensure consistent performance.\n\t\u2022\tHandle security updates and apply patches to protect system integrity.\n\t\u2022\tDocument technical workflows, configurations, and procedures to support team continuity.\n\nExperience and Skills Required\n\n\t\u2022\t5+ years of experience in ASP 2.0 and IIS.\n\t\u2022\tStrong understanding of Windows Server configurations and security protocols.\n\t\u2022\tProven track record of troubleshooting and maintaining legacy systems.\n\t\u2022\tIndependent and proactive problem-solving skills.\n\t\u2022\tStrong communication skills and experience collaborating in a remote or team-based environment.\n\nTo be considered for this opportunity, please include jumppumpkinoscarlostself at the top of your cover letter without alteration."
+  },
+  {
+    "title": "Amazon SES Expert Needed (AWS)",
+    "url": "https://www.upwork.com/jobs/Amazon-SES-Expert-Needed-span-class-highlight-AWS-span_~021851305014838548273/",
+    "posted_at": "Posted 1 hour ago",
+    "price": null,
+    "job_type": "Hourly: $75.00 - $150.00",
+    "duration": "Est. time: 1 to 3 months, Less than 30 hrs/week",
+    "experience_level": "Expert",
+    "description": "Looking for an expert in Amazon SES, for the following: \n\nGuidance on our dedicated IP pool setup (we have this set up, but need to optimize)\n\nGuidance on increasing send rate, our emails are sending too slowly.\n\nSet up better reporting using cloudwatch\n\nEnsure that we are following email deliverability best practices using SES\n\nPlease respond with details of your experience working with Amazon SES - we're looking for a true expert!"
+  },
+  {
+    "title": "Backend Developer / Python Engineer with PEPPOL experience",
+    "url": "https://www.upwork.com/jobs/Backend-Developer-Python-Engineer-with-PEPPOL-experience_~021851301182702623627/",
+    "posted_at": "Posted 1 hour ago",
+    "price": null,
+    "job_type": "Hourly: $16.00 - $75.00",
+    "duration": "Est. time: 1 to 3 months, Less than 30 hrs/week",
+    "experience_level": "Intermediate",
+    "description": "Core Responsibilities: Focus on building, validating, and deploying a PEPPOL-compliant api in Python. \n\nKey Skills:\n\nPython and Web Application Development: Strong experience in Python web frameworks (e.g., FastAPI, Flask, Django) and RESTful API development.\n\nPEPPOL Network and Compliance: Understanding of PEPPOL BIS standards, e-invoicing requirements, and the AS4 protocol.\n\nSOAP and AS4 Protocols: Proficiency with libraries like zeep for SOAP and pyOpenSSL or cryptography for AS4-compliant secure data exchange.\n\nXML and Data Validation: Skilled in handling XML schemas (using libraries like lxml) to ensure PEPPOL-compliant XML validation.\n\nDatabase Integration: Familiar with PostgreSQL and experience with ORMs like SQLAlchemy for database management.\n\nRole Objective: Develop the core PEPPOL-compliant backend application, focusing on secure message exchange and compliance with PEPPOL standards."
+  },
+  {
+    "title": "Amazon Vendor and Seller Central Expert Needed for Brand Issues",
+    "url": "https://www.upwork.com/jobs/Amazon-Vendor-and-Seller-Central-Expert-Needed-for-Brand-Issues_~021851298455824063057/",
+    "posted_at": "Posted 1 hour ago",
+    "price": null,
+    "job_type": "Hourly: $20.00 - $40.00",
+    "duration": "Est. time: 1 to 3 months, Less than 30 hrs/week",
+    "experience_level": "Expert",
+    "description": "We are seeking an experienced professional with a strong background in Amazon Vendor and Seller Central, specifically in catalog management and FBA setup. The ideal candidate will have hands-on experience dealing with brand registered products that face ownership issues. Specifically, obtaining the ability to manage the products to get it added to the company's brand correctly to be able to edit photos, item detail, and A+ contents etc. Currently, there are issues with the products being registered before the time where Amazon required the brand requirements and products exist in Amazon without correct Brand. And we're looking for FBA shipment set up assistance to navigate and understand the different FBA outbound and inbound charges. \n\nYour expertise will help us navigate these challenges effectively. If you have a proven track record in optimizing Amazon listings and resolving catalog issues, we want to hear from you!"
+  },
+  {
+    "title": "AWS Migration Specialist for Ubuntu Server and PostgreSQL Services",
+    "url": "https://www.upwork.com/jobs/span-class-highlight-AWS-span-Migration-Specialist-for-Ubuntu-Server-and-PostgreSQL-Services_~021851297011008284544/",
+    "posted_at": "Posted 1 hour ago",
+    "price": "Est. budget: $220.00",
+    "job_type": "Fixed price",
+    "duration": null,
+    "experience_level": "Intermediate",
+    "description": "We are seeking an experienced developer to assist us in migrating our existing services from an Ubuntu server with PostgreSQL to AWS ECS (Docker projects). The ideal candidate will have expertise in ECR, RDS, S3, Route 53, and EFS, with a strong understanding of CI/CD processes. Your role will involve planning, executing, and ensuring the smooth transition of our services while maintaining data integrity and uptime. \n\nNo agencies\nNo zero / hour zero experience developers\n\nWe will do zoom's to check level of skills / fit for the project before rolling into contract"
+  },
+  {
+    "title": "DevOps Engineer / System Administrator with PEPPOL Infrastructure Experience",
+    "url": "https://www.upwork.com/jobs/DevOps-Engineer-System-Administrator-with-PEPPOL-Infrastructure-Experience_~021851283837038988721/",
+    "posted_at": "Posted 2 hours ago",
+    "price": null,
+    "job_type": "Hourly: $20.00 - $100.00",
+    "duration": "Est. time: 1 to 3 months, Less than 30 hrs/week",
+    "experience_level": "Intermediate",
+    "description": "Core Responsibilities: Handle deployment, server setup, and ongoing infrastructure management for multiple servers. CI/CD pipelines in gitlab. Environment management. One PEPPOL compliant server. \n\nKey Skills:\n\nInfrastructure Management on AWS: Experienced with AWS EC2, RDS, and network configuration.\nPEPPOL Application Hosting and Security: Skilled in deploying and securing PEPPOL-compliant applications, including setting up HTTPS with SSL certificates.\nAutomated Deployment and Monitoring: Familiar with CI/CD pipelines and monitoring tools.\nNetwork Security: Understanding of security group configuration, firewalls, and secure server management.\nRole Objective: Provide. backend developers with a secure, scalable server environment and ensure smooth deployment and operations."
+  },
+  {
+    "title": "Low Latency Extremely Robust Distributed AI Inference API",
+    "url": "https://www.upwork.com/jobs/Low-Latency-Extremely-Robust-Distributed-Inference-API_~021851282266992309996/",
+    "posted_at": "Posted 2 hours ago",
+    "price": null,
+    "job_type": "Hourly: $30.00 - $100.00",
+    "duration": "Est. time: 3 to 6 months, 30+ hrs/week",
+    "experience_level": "Expert",
+    "description": "Objective:\nDesign a cloud architecture capable of processing highlight clips uploaded by a client, extracting interesting metrics from the clip, and returning these metrics in near real-time. Given that these metrics are used during live broadcasts, the system must be both extremely fast and highly robust, as any drop in service during a live broadcast is unacceptable. \n\nPlease address the following questions in your cover letter:\n1. How would you design a cloud-based architecture to ensure near real-time processing of video clips with minimal latency?\n2. What experience do you have in deploying large-scale AI models (e.g., pose estimation or detection models) on GPU-accelerated servers? \n3. How would you approach implementing horizontal scaling for the distributed workload, especially ensuring frame distribution across multiple GPU servers?\n4. Describe a strategy for monitoring and alerting in a system that must operate continuously during live broadcasts. How would you minimize downtime / add redundancy in case of component failures?\n\nPlease send in a cover letter describing your interest in the project and answer the screening questions to the best of your ability. You will receive the full project scope upon cover letter review."
+  }
+]
