@@ -1,13 +1,13 @@
 import json
 import asyncio
-import os
+import os, sys
 from dotenv import load_dotenv, find_dotenv
 from src.crawler import Crawler
 from src.database import DatabaseManager
 from src.notifier import Notifier
 import logging
 
-load_dotenv(find_dotenv(usecwd=True))
+load_dotenv(dotenv_path=sys.argv[1])
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
