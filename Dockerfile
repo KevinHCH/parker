@@ -1,7 +1,7 @@
 # Define Python version as an argument
 ARG PYTHON_VERSION=3.12
 
-FROM python:${PYTHON_VERSION}-slim AS builder
+FROM python:${PYTHON_VERSION}-slim
 
 RUN apt-get update && apt-get install -y cron sqlite3
 ENV TZ=Europe/Berlin
