@@ -1,0 +1,33 @@
+# .github/actions/docker-setup/action.yml
+name: "Docker Setup and Login"
+description: "Sets up Docker, logs into GHCR, and prepares Docker image name"
+
+inputs:
+  token:
+    description: "GitHub token for GHCR login"
+    required: true
+  repository:
+    description: "GitHub repository name"
+    required: true
+
+outputs:
+  docker_image:
+    description: "Lowercase Docker image name"
+    value: ${{ steps.set-image-name.outputs.docker_image }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set Docker Image Name
+      id: set-image-name
+      shell: bash
+      run: |
+        DOCKER_IMAGE=$(echo ${{ inputs.repository }} | tr '[:upper:]' '[:lower:]')
+        echo "docker_image=${DOCKER_IMAGE}" >> "$GITHUB_OUTPUT"
+
+    - name: Login to GHCR
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ inputs.token }}
