@@ -64,6 +64,9 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/kevin/projects/parker
+
+            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} --password-stdin
+
             docker pull ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
 
             docker run -d \
