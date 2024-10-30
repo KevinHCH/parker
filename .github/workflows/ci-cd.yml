@@ -69,4 +69,7 @@ jobs:
 
             docker pull ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
 
-            docker run -d ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
+            docker run -d \
+            -e "FLARESOLVER_ENDPOINT=http://${{ secrets.REMOTE_HOST }}/v1" \
+            -e "NOTIFICATION_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8080" \
+            ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
