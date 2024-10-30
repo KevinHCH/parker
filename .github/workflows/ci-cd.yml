@@ -25,7 +25,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Setup Docker
-        uses: ./.github/workflows/docker-setup.yml
+        uses: ./.github/actions/docker-setup.yml
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
@@ -41,7 +41,7 @@ jobs:
 
     steps:
       - name: Setup Docker
-        uses: ./.github/workflows/docker-setup.yml
+        uses: ./.github/actions/docker-setup.yml
 
       - name: Deploy to Remote Server
         uses: appleboy/ssh-action@v0.1.8
