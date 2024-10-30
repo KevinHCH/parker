@@ -69,7 +69,7 @@ jobs:
             docker stop parker && docker rm parker
             docker pull ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
 
-            echo "FLARESOLVER_ENDPOINT=http://${{ secrets.REMOTE_HOST }}/v1" >> .env
+            echo "FLARESOLVER_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8191/v1" >> .env
             echo "NOTIFICATION_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8080" >> .env
 
             docker run -d \
