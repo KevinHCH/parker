@@ -48,6 +48,10 @@ jobs:
     needs: build
 
     steps:
+      - name: Set Docker Image Name
+        id: set-image-name
+        run: echo "DOCKER_IMAGE=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+
       - name: Deploy to Remote Server
         uses: appleboy/ssh-action@v0.1.8
         with:
