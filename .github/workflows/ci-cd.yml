@@ -64,15 +64,13 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/kevin/projects/parker
-            rm .env
+
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
             docker stop parker && docker rm parker
             docker pull ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
 
-            echo "FLARESOLVER_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8191/v1" >> .env
-            echo "NOTIFICATION_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8080" >> .env
-
             docker run -d \
             --name parker \
-            --env-file .env \
+            -e FLARESOLVER_ENDPOINT="http://${{ secrets.REMOTE_HOST }}:8191/v1" \
+            -e NOTIFICATION_ENDPOINT="http://${{ secrets.REMOTE_HOST }}:8080" \
             ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
