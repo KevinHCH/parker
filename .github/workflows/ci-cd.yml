@@ -69,6 +69,4 @@ jobs:
 
             docker pull ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
 
-            docker run -d \
-              -v $(pwd)/jobs.db:/app/jobs.db \
-              ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
+            docker run -d ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
