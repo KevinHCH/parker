@@ -12,8 +12,8 @@ logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
-REMOTE_HOST = os.getenv("FLARESOLVER_ENDPOINT")
-NOTIFICATION_ENDPOINT = os.getenv("NOTIFICATION_ENDPOINT")
+REMOTE_HOST = os.getenv("FLARESOLVER_ENDPOINT", "http://localhost:8191/v1")
+NOTIFICATION_ENDPOINT = os.getenv("NOTIFICATION_ENDPOINT", "http://localhost:8080")
 DB_PATH = os.getenv("DB_PATH", "jobs.db")
 
 

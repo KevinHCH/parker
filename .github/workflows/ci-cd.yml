@@ -60,7 +60,5 @@ jobs:
             docker pull ghcr.io/${{ env.DOCKER_IMAGE }}:latest
 
             docker run -d \
-              -e "FLARESOLVER_ENDPOINT=http://localhost:8191/v1" \
-              -e "NOTIFICATION_ENDPOINT=http://localhost:8080" \
               -v $(pwd)/jobs.db:/app/jobs.db \
               ghcr.io/${{ env.DOCKER_IMAGE }}:latest

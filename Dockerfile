@@ -1,20 +1,25 @@
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+# Define Python version as an argument
+ARG PYTHON_VERSION=3.12
 
+FROM python:${PYTHON_VERSION}-slim AS builder
+
+RUN apt-get update && apt-get install -y cron sqlite3
+ENV TZ=Europe/Berlin
+
+# Show the currently running commands
+SHELL ["sh", "-exc"]
+
+# Set working directory
 WORKDIR /app
-# Copy the application into the container.
+COPY requirements.txt /app/requirements.txt
+RUN pip install -r requirements.txt --no-cache-dir
 COPY . /app
+# See <https://hynek.me/articles/docker-signals/>.
+STOPSIGNAL SIGINT
 
-# Install the application dependencies.
-RUN uv sync --frozen --no-cache
-
-RUN useradd -m nonroot && chown -R nonroot:nonroot /app
-USER nonroot
-
-# Add cron job for running the script every 2 minutes
-RUN echo "*/2 * * * * /app/.venv/bin/python /app/main.py >> /var/logs/cron.log 2>&1" > /tmp/parker \
+# run every 2 minutes from monday to friday (8 am to 21)
+RUN echo "*/2 8-21 * * 1-5 cd /app && /usr/local/bin/python3 /app/main.py >> /var/log/cron.log 2>&1" > /tmp/parker \
   && crontab /tmp/parker
-
-VOLUME ["/app/jobs.db"]
 
 # Start cron in the foreground to keep the container running
 CMD ["cron", "-f"]
