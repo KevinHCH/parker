@@ -64,6 +64,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/kevin/projects/parker
+            touch jobs.db
 
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
             docker stop parker && docker rm parker
