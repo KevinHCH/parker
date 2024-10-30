@@ -20,11 +20,10 @@ COPY . /app
 # See <https://hynek.me/articles/docker-signals/>.
 STOPSIGNAL SIGINT
 # VERY IMPORTANT STEP SINCE THE CRONJOB DOESN'T READ THE ENV_VARS BY DEFAULT
-RUN echo "FLARESOLVER_ENDPOINT=${FLARESOLVER_ENDPOINT}" >> /etc/environment
-RUN echo "NOTIFICATION_ENDPOINT=${NOTIFICATION_ENDPOINT}" >> /etc/environment
-
+RUN chmod +x /app/bin/enable_env.sh
+RUN /app/bin/enable_env.sh
 # run every 2 minutes from monday to friday (8 am to 21)
-RUN echo "*/2 8-21 * * 1-5 . /etc/environment && cd /app && /usr/local/bin/python3 /app/main.py >> /var/log/cron.log 2>&1" > /tmp/parker \
+RUN echo "*/2 8-21 * * 1-5 cd /app && /usr/local/bin/python3 /app/main.py >> /var/log/cron.log 2>&1" > /tmp/parker \
   && crontab /tmp/parker
 
 # Start cron in the foreground to keep the container running
