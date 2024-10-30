@@ -1,4 +1,3 @@
-# .github/actions/docker-setup/action.yml
 name: "Docker Setup and Login"
 description: "Sets up Docker, logs into GHCR, and prepares Docker image name"
 
