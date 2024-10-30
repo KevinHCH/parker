@@ -54,7 +54,7 @@ class Job:
             f"*Posted At:* {self.posted_at}",
             f"*Price:* {self.price if self.price else self.job_type}\n",
             "*Description*",
-            f">{description_str[:300]}...",
+            f">{description_str[:400]}...",
         ]
         return {
             "message": "\n".join(message),
