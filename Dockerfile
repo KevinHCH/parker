@@ -26,4 +26,4 @@ RUN chmod +x /app/bin/entrypoint.sh
 RUN echo "*/2 8-21 * * 1-5 cd /app && /usr/local/bin/python3 /app/main.py >> /var/log/cron.log 2>&1" > /tmp/parker \
   && crontab /tmp/parker
 
-ENTRYPOINT ["/app/bin/enable_env.sh"]
+ENTRYPOINT ["/app/bin/entrypoint.sh"]
