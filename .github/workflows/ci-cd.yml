@@ -66,10 +66,13 @@ jobs:
             cd /home/kevin/projects/parker
 
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
-
+            docker stop parker && docker rm parker
             docker pull ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
 
+            echo "FLARESOLVER_ENDPOINT=http://${{ secrets.REMOTE_HOST }}/v1" >> .env
+            echo "NOTIFICATION_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8080" >> .env
+
             docker run -d \
-            -e "FLARESOLVER_ENDPOINT=http://${{ secrets.REMOTE_HOST }}/v1" \
-            -e "NOTIFICATION_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8080" \
+            --name parker
+            --env-file .env \
             ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
