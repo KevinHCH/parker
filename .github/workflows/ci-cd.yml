@@ -73,4 +73,5 @@ jobs:
             --name parker \
             -e FLARESOLVER_ENDPOINT="http://${{ secrets.REMOTE_HOST }}:8191/v1" \
             -e NOTIFICATION_ENDPOINT="http://${{ secrets.REMOTE_HOST }}:8080" \
+            -v $(pwd)/jobs.db:/app/jobs.db \
             ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
