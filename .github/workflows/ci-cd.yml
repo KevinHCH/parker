@@ -73,6 +73,6 @@ jobs:
             echo "NOTIFICATION_ENDPOINT=http://${{ secrets.REMOTE_HOST }}:8080" >> .env
 
             docker run -d \
-            --name parker
+            --name parker \
             --env-file .env \
             ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
