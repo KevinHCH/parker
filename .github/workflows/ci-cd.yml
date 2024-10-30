@@ -65,7 +65,7 @@ jobs:
           script: |
             cd /home/kevin/projects/parker
 
-            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} --password-stdin
+            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
 
             docker pull ghcr.io/${{ steps.docker-setup.outputs.docker_image }}:latest
 
