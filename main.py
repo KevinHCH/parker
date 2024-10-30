@@ -22,6 +22,8 @@ async def main():
         raise ValueError(
             "FLARESOLVER_ENDPOINT or NOTIFICATION_ENDPOINT are not set in .env file"
         )
+    logging.info(f"REMOTE_HOST: {REMOTE_HOST}")
+    logging.info(f"NOTIFICATION_ENDPOINT: {NOTIFICATION_ENDPOINT}")
 
     db_manager = DatabaseManager(DB_PATH)
     notification_sender = Notifier(NOTIFICATION_ENDPOINT)
