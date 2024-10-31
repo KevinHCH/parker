@@ -2,7 +2,10 @@
 > A tool to dig some gold in Upwork
 > An Upwork job notification tool inspired by [zenfl.pro/bot](https://zenfl.pro/bot)
 
-![alt Result](./result.png)
+<img src="./result.png" 
+    alt="Picture" 
+    width="auto" 
+    style="display: block; margin: 0 auto" />
 
 A personal project that monitors Upwork job postings based on custom search criteria (defined in urls.json) and sends notifications for new opportunities to a Telegram channel.
 
