@@ -6,8 +6,8 @@ class Notifier:
     def __init__(self, notification_endpoint: str):
         self.notification_endpoint = notification_endpoint
 
-    async def send_notification(self, message: str, button: dict) -> None:
-        data = {"message": message, "enqueue": False}
+    async def send_notification(self, message: str, button: dict = None) -> None:
+        data = {"message": message}
         if button:
             data["button"] = button
 
